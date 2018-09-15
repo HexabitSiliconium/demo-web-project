@@ -40,6 +40,15 @@ public class WebController {
 	private UserManager userManager;
 	@Autowired
 	private GpsProductManager gpsProductManager;
+        
+        /**
+         * Michael Wono custom HTTP API, returns a useless time
+         * y'know, in case you need to know ms time
+         */
+        @RequestMapping(value = "/time", method = RequestMethod.GET)
+	long returnStatus() {
+            return System.currentTimeMillis();
+	}
 
 	/**
 	 * This is a simple example of how the HTTP API works.
