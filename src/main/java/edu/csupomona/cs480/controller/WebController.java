@@ -49,6 +49,23 @@ public class WebController {
 	long returnStatus() {
             return System.currentTimeMillis();
 	}
+        /**
+         * Jonathan Fong custom HTTP API, returns something
+         * very clever looking.
+         * 
+         */
+        @RequestMapping(value = "/dancing", method = RequestMethod.GET)
+     String dancing() {
+        	String moves = "You put your right foot in. \n"
+        			+ "You put your right foot out. \n"
+        			+ "You put your right foot in and you shake it all about. \n"
+        			+ "You do the hokey pokey and you turn yourself around. \n"
+        			+ "That's what it's all about. \n"
+        			+ "Hokey Pokey!";
+        	
+        	
+        	return moves;
+        }
 
 	/**
 	 * This is a simple example of how the HTTP API works.
