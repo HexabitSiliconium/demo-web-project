@@ -49,6 +49,12 @@ public class WebController {
 	long returnStatus() {
             return System.currentTimeMillis();
 	}
+
+		@RequestMapping(value = "/henry", method = RequestMethod.GET)
+	String message() {
+            String message = "Hello, this is Henry.";
+			return message;
+	}
         /**
          * Jonathan Fong custom HTTP API, returns something
          * very clever looking.
