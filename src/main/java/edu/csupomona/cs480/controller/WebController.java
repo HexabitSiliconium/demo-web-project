@@ -66,6 +66,17 @@ public class WebController {
         	
         	return moves;
         }
+   /**
+    * Cassi Lam custom HTTP API, returns the date
+    */
+   @RequestMapping(value = "/date", method = RequestMethod.GET)
+   String getDate() {
+      Date todaysDate = new Date();
+      String date = "Current date: " + todaysDate;
+
+      return date;
+   }
+
 
 	/**
 	 * This is a simple example of how the HTTP API works.
