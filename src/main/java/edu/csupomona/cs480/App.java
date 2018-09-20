@@ -11,6 +11,8 @@ import edu.csupomona.cs480.data.provider.FSUserManager;
 import edu.csupomona.cs480.data.provider.GpsProductManager;
 import edu.csupomona.cs480.data.provider.UserManager;
 
+import java.util.Date;
+
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
