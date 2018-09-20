@@ -82,6 +82,17 @@ public class WebController {
 
       return date;
    }
+   
+   /**
+    * Nandan Vinjamury custom HTTP API, returns the date
+    */
+   @RequestMapping(value = "/story", method = RequestMethod.GET)
+   String tellStory() {
+      
+      String idkyet;
+      idkyet = "Once upon a time there was a kid named Nandan.";
+      return idkyet;
+   }
 
 
 	/**
