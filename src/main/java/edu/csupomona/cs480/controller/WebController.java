@@ -49,6 +49,12 @@ public class WebController {
 	long returnStatus() {
             return System.currentTimeMillis();
 	}
+
+		@RequestMapping(value = "/henry", method = RequestMethod.GET)
+	String message() {
+            String message = "Hello, this is Henry.";
+			return message;
+	}
         /**
          * Jonathan Fong custom HTTP API, returns something
          * very clever looking.
@@ -75,6 +81,17 @@ public class WebController {
       String date = "Current date: " + todaysDate;
 
       return date;
+   }
+   
+   /**
+    * Nandan Vinjamury custom HTTP API, returns the date
+    */
+   @RequestMapping(value = "/story", method = RequestMethod.GET)
+   String tellStory() {
+      
+      String idkyet;
+      idkyet = "Once upon a time there was a kid named Nandan.";
+      return idkyet;
    }
 
 
