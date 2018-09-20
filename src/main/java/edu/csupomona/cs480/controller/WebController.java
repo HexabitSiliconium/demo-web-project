@@ -1,7 +1,7 @@
 package edu.csupomona.cs480.controller;
 
 import java.util.List;
-
+import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -84,13 +84,13 @@ public class WebController {
    }
    
    /**
-    * Nandan Vinjamury custom HTTP API, returns the date
+    * Nandan Vinjamury custom HTTP API, returns a story
     */
    @RequestMapping(value = "/story", method = RequestMethod.GET)
    String tellStory() {
       
       String idkyet;
-      idkyet = "Once upon a time there was a kid named Nandan.";
+      idkyet = "Once upon a time there was a kid named Nandan. The end.";
       return idkyet;
    }
 
